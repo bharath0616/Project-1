@@ -405,7 +405,7 @@ body {
     overflow: hidden;       
 }
   #items .varieties a,input{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .food .list h3{
     font-size: 1.3rem;
@@ -431,6 +431,7 @@ body {
 
   #items .varieties a,input{
     font-size: 0.5rem;
+    font-weight: 800;
   }
   
   .food .list h3{
@@ -467,6 +468,7 @@ body {
 }
   #items .varieties a,input{
     font-size: 0.4rem;
+    font-weight: 800;
   }
   
   .food .list h3{
@@ -491,7 +493,8 @@ body {
     overflow: hidden;       
 }
   #items .varieties a,input{
-    font-size: 0.3rem;
+    font-size: 0.35rem;
+    font-weight: 900;
   }
   
   .food .list h3{
