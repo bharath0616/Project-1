@@ -425,10 +425,16 @@
         margin-left: 0px;
         margin-top: 50px;
         display: grid;
-        grid-template-columns: 1fr;    
+        grid-template-columns: 1fr; 
+        margin-left: 40px;   
       }
       #grid .b{
         padding: 35px 35px;
+      }
+      .b{
+        margin-right: 30px;
+        margin-bottom: 30px;
+        box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.5) ;
       }
   }
   
