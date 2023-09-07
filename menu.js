@@ -1,43 +1,43 @@
 $(document).ready(function(){
     $(".h2adb").click(function(){
-        $("#adb").show().fadeOut(2000);
+        $("#adb").show().fadeOut(4000);
     });
     
 });
 
 $(document).ready(function(){
     $(".h2strt").click(function(){
-        $("#strt").show().fadeOut(2000);
+        $("#strt").show().fadeOut(4000);
     });
     
 });
 $(document).ready(function(){
     $(".h2sl").click(function(){
-        $("#sl").show().fadeOut(2000);
+        $("#sl").show().fadeOut(4000);
     });
     
 });
 $(document).ready(function(){
     $(".h2mc").click(function(){
-        $("#mc").show().fadeOut(2000);
+        $("#mc").show().fadeOut(4000);
     });
     
 });
 $(document).ready(function(){
     $(".h2sw").click(function(){
-        $("#sw").show().fadeOut(2000);
+        $("#sw").show().fadeOut(4000);
     });
     
 });
 $(document).ready(function(){
     $(".h2db").click(function(){
-        $("#db").show().fadeOut(9000);
+        $("#db").show().fadeOut(4000);
     });
     
 });
 $(document).ready(function(){
     $(".h2ap").click(function(){
-        $("#ap").show().fadeOut(100);
+        $("#ap").show().fadeOut(4000);
     });
     
 });
