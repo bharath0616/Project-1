@@ -71,17 +71,15 @@ $(document).ready(function() {
   });
 
   $(document).ready(function(){
-
-    $("#cartbtn").click(function(){
-        var i=0;
+    var i=0;
+    $(".cartbtn").click(function(){
+        
         $(".quantity").text(i+=1);
     })
 
-    $("#cartbtn").click(function(){
-        var elem=$("#cartbtn").parent().clone();
-        $(".cartpage").addClass("food list img");
-        
-        $(".cartpage").append(elem);
+    $(".cartbtn").click(function(){
+        var elem=$(this).siblings("img, p, h3").clone();        
+        $(".cartitems").append(elem);
     });
     
   });
