@@ -399,7 +399,7 @@ border-radius: 20px;
   opacity: 0.8;
   z-index: 1004;
   overflow-y: auto;
-  position: fixed;
+  position:relative;
   display: none;
 
   
@@ -422,6 +422,40 @@ border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items:center; 
+}
+.cpbtn{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.clear-cart{
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 800;
+  background-color: #24262b;
+  color: white;
+  border-color: transparent;
+  margin-left: 5px;
+  display: inline-block;
+}
+.cart-proceed{
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 800;
+  background-color: #24262b;
+  color: white;
+  border-color: transparent;
+  display: inline-block;
+  margin-right: 5px;
+}
+.clear-cart:hover{
+  background-color: red;
+
+}
+.cart-proceed:hover{
+  background-color: green;
+  
 }
 input{
   color: black;

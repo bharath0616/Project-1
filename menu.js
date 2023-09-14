@@ -69,17 +69,44 @@ $(document).ready(function() {
     })
     
   });
-
+  
   $(document).ready(function(){
-    var i=0;
-    $(".cartbtn").click(function(){
+    function increment(){
+        var i=0;
+        $(".cartbtn").click(function(){
         
-        $(".quantity").text(i+=1);
-    })
+            $(".quantity").text(i+=1);
+            $(".cpbtn").show();
+            
+        })
 
+    }
+    increment();
     $(".cartbtn").click(function(){
         var elem=$(this).siblings("img, p, h3").clone();        
         $(".cartitems").append(elem);
     });
     
+  });
+
+  $(document).ready(function(){
+    $(".clear-cart").click(function(){
+        $(".cartitems").empty();
+        $(".cartpage").slideUp(500);
+        $(".cpbtn").hide();
+        $(".quantity").text("0")
+        increment();
+        
+    })
+    
+  });
+
+  $(document).ready(function(){
+    function checkContent() {
+        if ($(".cartitems").empty ) {
+            // Content is present, show the cpbtn section
+            $(".cpbtn").hide()
+        } 
+    }
+    checkContent()
   });
