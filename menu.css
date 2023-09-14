@@ -394,6 +394,7 @@ border-radius: 20px;
   background-color: black;
   width: 100%;
   height:fit-content;
+  min-height: 100vh;
   opacity: 0.8;
   z-index: 1004;
   overflow-y: auto;
@@ -402,8 +403,10 @@ border-radius: 20px;
 
   
 }
-.cartpage h5{
+.cartpage h8{
   float: right;
+  position: absolute;
+  z-index: 1005;
   font-size: 30px;
   color:white;
   cursor: pointer;
