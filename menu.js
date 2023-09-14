@@ -64,7 +64,7 @@ $(document).ready(function() {
     $(".cart").click(function(){
         $(".cartpage").slideDown();  
     })
-    $("h5").click(function(){
+    $("h8").click(function(){
         $(".cartpage").slideUp(500);
     })
     
