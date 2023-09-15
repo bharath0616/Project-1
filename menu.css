@@ -263,8 +263,7 @@ border-radius: 20px;
       width:100%;
       gap:1rem;
       grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  
-          
+        
   }
   .food p{
     font-size: 13px;
@@ -275,6 +274,25 @@ border-radius: 20px;
   .cartbtn{
     font-size: 10px;
   }
+  #items .varieties{
+    margin-top: 4px;
+    padding: 3px;
+  }
+  #items .varieties a{
+    font-size: 10px;
+  }
+  #menu-top .ctg{
+padding: 0px;
+  }
+#menu-top .ctg h1{
+  font-size: 11px;
+}
+#menu-top .filters-a{
+  font-size: 11px;
+}
+.varieties .up{
+  margin-top: 1000px;
+}
 
 }
 @media(max-width:391px){
@@ -283,16 +301,16 @@ border-radius: 20px;
       display: grid;
       width:100%;
       gap:1rem;
-      grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
+      grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
   
       .food p{
-        font-size: 13px;
+        font-size: 11px;
       }
       .food h3{
-        font-size: 16px;
+        font-size: 12px;
       }
       .cartbtn{
-        font-size: 10px;
+        font-size: 7px;
       }  
   }
 
@@ -380,7 +398,7 @@ border-radius: 20px;
   z-index: 1000;
 }
 .varieties .up{
-  margin-top: 560px;
+  margin-top: 350px;
   font-size: 30px;
   display: inline-block;
   margin-left: 10px;
