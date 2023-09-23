@@ -62,10 +62,10 @@ $(document).ready(function() {
 
   $(document).ready(function(){
     $(".cart").click(function(){
-        $(".cartpage").slideDown();  
+        $(".cartpage").addClass("cart-display"); 
     })
     $("h8").click(function(){
-        $(".cartpage").slideUp(500);
+        $(".cartpage").removeClass("cart-display"); 
     })
     
   });
