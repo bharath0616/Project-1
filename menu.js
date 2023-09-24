@@ -70,4 +70,55 @@ $(document).ready(function() {
     
   });
   
+  $(document).ready(function () {
+    var i = 1;
+    var costPerProduct = Number($(".cartitems3 p").text()); // Initialize cost per product from h1
+
+    $(".plus").click(function () {
+        i += 1;
+        $(".cartitems2 span").text(i);
+
+        // Calculate the total cost by multiplying the cost per product by the number of products
+        var totalCost = costPerProduct * i;
+        $(".cartitems3 p").text(totalCost);
+    });
+
+    $(".minus").click(function () {
+        if(i>0){
+        i -= 1;
+        $(".cartitems2 span").text(i);
+
+        // Calculate the total cost by multiplying the cost per product by the number of products
+        var totalCost = costPerProduct * i;
+        $(".cartitems3 p").text(totalCost);
+        }
+});
+});
+
+$(document).ready(function () {
+    $(".cartbtn").click(function () {
+        // Get the item details
+        var itemName = $("#adb").text();
+        var itemPrice = parseInt($(".list p").text()); // Assuming price is an integer
+
+        // Create a new cart item
+        var cartItem = $("<div class='cartitem'></div>");
+        var cartItems = $("<div class='cartitems'></div>");
+        var cartItems2 = $("<div class='cartitems2'></div>");
+        var cartItems3 = $("<div class='cartitems3'></div>");
+
+        // Set the cart item details
+        cartItems.append("<h3>" + itemName + "</h3>");
+        cartItems2.append("<button class='plus'>+</button>");
+        cartItems2.append("<span>1</span>");
+        cartItems2.append("<button class='minus'>-</button>");
+        cartItems3.append("<p>" + itemPrice + "</p>");
+
+        // Append the cart item to the cart section
+        cartItem.append(cartItems);
+        cartItem.append(cartItems2);
+        cartItem.append(cartItems3);
+        $(".cartpage").append(cartItem);
+    });
+});
   

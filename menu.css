@@ -443,13 +443,9 @@ padding: 0px;
   width:100%;
   gap:1rem;
   grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-}
-@media(max-width:1266px){
-  .cartpage{
-    
 
-  }
 }
+
 .cartitems{
   display: flex;
   justify-content:baseline;
