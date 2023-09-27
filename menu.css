@@ -385,13 +385,35 @@ padding: 0px;
 }
 .list h4{
   background:#74c54f;
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 900;
   display: none;
   position: absolute;
   z-index: 1000;
+}
+@media(max-width:900px){
+  .list h4{
+    font-size: 20px;
+  }
+  
+
+}
+@media(max-width:700px){
+  .list h4{
+    font-size: 16px;
+  }
+}
+@media(max-width:550px){
+  .list h4{
+    font-size: 13px;
+  }
+}
+@media(max-width:410px){
+  .list h4{
+    font-size: 12px;
+  }
 }
 .varieties .up{
   margin-top: 350px;
