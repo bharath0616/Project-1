@@ -11,6 +11,7 @@ body {
     
 }
 
+
 .nv {
     z-index: 1;
     position: sticky;
@@ -132,13 +133,7 @@ body {
   width: 100%;
   align-items:center;
 }
-.cartitems{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 40px;
-}
+
 .cartitems img{
   width: 300px; 
   
@@ -411,22 +406,35 @@ padding: 0px;
 }
 
 .cartpage{
-  background-color:#74c54f;
+  background-color:#803a2a;
   height:fit-content;
-  height: 100%;
+  min-height: 100vh;
+  height: fit-content;
   width: 45%;
   z-index: 1004;
   overflow-y: auto;
+  overflow-x: none;
   position:absolute;
  border-bottom-left-radius: 50px;
- border-top-left-radius: 50px;
-  right: -100%;
+ transition: transform 0.3s ease-in-out; /* Add a transition for smooth sliding */
+ transform: translateX(100%);
+right: -100%;
 }
-.cart-display{
+.cartpage.show {
+  transform: translateX(0);
   margin-left: 70%;
   right:0;
   position: absolute;
+
 }
+.cart-hide {
+  
+  transition: transform 0.3s ease-out; /* Add a transition for smooth sliding */
+ transform: translateX(100%);
+
+}
+
+ 
 .cartpage h8{
   margin-left: 94%;
   display: inline-block;
@@ -439,18 +447,20 @@ padding: 0px;
 }
 .cartitem{
   margin-top: 30px;
+  margin-left: 30px;
   display: grid;
   width:100%;
   gap:1rem;
   grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-
+  margin-bottom: 30px;
 }
+
 
 .cartitems{
   display: flex;
   justify-content:baseline;
   align-items: baseline;
-  margin-bottom: 30px;
+ 
 
 }
 .cartitem h1{
@@ -470,6 +480,7 @@ padding: 0px;
 
 .cartitems2 span{
   text-align: center;
+  color: white;
   font-weight: 900;
   margin-right: 30px;
   margin-left: 30px;
@@ -488,6 +499,7 @@ padding: 0px;
 
 .cartitems3 {
   margin-left: 30px;
+  color: white;
 }
 .cartpage h9{
   color:white;
@@ -499,9 +511,9 @@ padding: 0px;
   align-items:center; 
 }
 .cpbtn{
-  display: flex;
-  justify-content: space-between;
-  
+  margin-top: 20px;
+display: flex;
+justify-content: space-between;
 }
 
 .clear-cart{
@@ -550,266 +562,7 @@ input{
     margin-top: 100px;
   }
 }
-/* @media(max-width:2050px){
-  .food{
-    display: grid;
-    justify-content:space-around;
-    grid-template-columns:350px 350px 350px 350px ; 
-    grid-template-rows:280px 280px 280px 280px ;     
-}
-}
-@media(max-width:1853px){
-  .food{
-    display: grid;
-    justify-content:space-around;
-    grid-template-columns:350px 350px 350px  ; 
-    grid-template-rows:280px 280px 280px ;     
-}
-.food .list{
-  margin-left: 100px;
-}
 
-}
-@media(max-width:1505px){
-  .food{
-    display: grid;
-    justify-content:space-around;
-    grid-template-columns:320px 320px 320px  ; 
-    grid-template-rows:280px 280px 280px ;     
-}
-.food .list{
-  margin-left: 100px;
-}
-
-}
-@media(max-width:1425px){
-  .food{
-    display: grid;
-    justify-content:space-around;
-    grid-template-columns:300px 300px 300px  ; 
-    grid-template-rows:280px 280px 280px ;     
-}
-  .food .list{
-    width: 270px;
-    margin-right: 0px;
-    margin-left: 100px;
-    padding: 0;
-  }
-  #items .varieties a{
-    font-size: 20px;
-  }
-  .food .list img{
-    width: 250px;
-  }
-  .food .list img:hover{
-    width:260px;
-    border-radius: 20px;
-}
-  .food .list p{
-    font-size: 18px;
-  }
-  .food .list h3{
-    font-size: 23px;
-  }
-}
-@media(max-width:1288px){
-  .food .list{ 
-    display: flex;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
-    justify-content:space-evenly;
-    align-items:baseline;
-    margin-left: 10px;
-    margin-right: 0px;
-    margin-top: 20px;
-    width: 300px;
-}
-
-
-@media(max-width:1059px){
-  .food{
-    display: grid;
-    justify-content:flex-end;
-    margin-left: 20px;
-    grid-template-columns:220px 220px 220px; 
-    grid-template-rows:190px 190px  ;
-
-}
-}
-#items .varieties a{
-  font-size: 12px;
-}
-.food .list img{
-  width: 200px;
-}
-.food .list img:hover{
-  width:210px;
-  border-radius: 20px;
-}
-.food .list p{
-  font-size: 13px;
-}
-.food .list h3{
-  font-size: 15px;
-
-}
-}
-@media(max-width:898px){
-  .food{
-    display: grid;
-    justify-content:flex-end;
-    margin-left: 30px;
-    
-    grid-template-columns:310px 310px   ; 
-    grid-template-rows:260px 260px;     
-}
-#items .varieties a{
-  font-size: 17px;
-}
-.food .list img{
-  width:250px;
-}
-.food .list img:hover{
-  width:260px;
-  border-radius: 20px;
-}
-.food .list p{
-  font-size: 18px;
-}
-.food .list h3{
-  font-size: 19px;
-}   
-
-}
-@media(max-width:788px){
-  .food{
-  
-    display: grid;
-    grid-template-columns:100px; 
-    grid-template-rows:290px;
-  }  
-    #items .varieties a{
-      font-size: 14px;
-    }
-    .food .list img{
-      width: 330px;
-    }
-    .food .list img:hover{
-      width:340px;
-      border-radius: 20px;
-  }
-    .food .list p{
-      font-size: 15px;
-    }
-    .food .list h3{
-      font-size: 20px;
-    }   
-
-
-}
-@media(max-width:598px){
-  .food{
-    display: grid;
-    
-    
-    grid-template-columns:80px    ; 
-    grid-template-rows:210px;
-  }  
-    #items .varieties a{
-      font-size: 10px;
-    }
-    .food .list img{
-      width: 250px; 
-    }
-    .food .list img:hover{
-      width:260px;
-      border-radius: 20px;
-  }
-    .food .list p{
-      font-size: 15px;
-    }
-    .food .list h3{
-      font-size: 20px;
-    }   
-}
-
-@media(max-width:514px){
-  .food{
-    display: grid;
-    
-    
-    grid-template-columns:100px    ; 
-    grid-template-rows:210px;
-  }  
-    #items .varieties a{
-      font-size: 10px;
-    }
-    .food .list img{
-      width: 220px;
-    }
-    .food .list img:hover{
-      width:230px;
-      border-radius: 20px;
-  }
-    .food .list p{
-      font-size: 15px;
-    }
-    .food .list h3{
-      font-size: 18px;
-    }   
-}
-@media(max-width:427px){
-  .food{
-    display: grid;
-    
-    
-    grid-template-columns:100px    ; 
-    grid-template-rows:190px;
-  }  
-    #items .varieties a{
-      font-size: 7px;
-    }
-    .food .list img{
-      width: 160px;
-    }
-    .food .list img:hover{
-      width:200px;
-      border-radius: 20px;
-  }
-    .food .list p{
-      font-size: 10px;
-    }
-    .food .list h3{
-      font-size: 12px;
-    }   
-}
-
-@media(max-width:380px){
-  .food{
-    display: grid;
-    
-    
-    grid-template-columns:100px    ; 
-    grid-template-rows:190px;
-  }  
-    #items .varieties a{
-      font-size: 7px;
-    }
-    .food .list img{
-      width: 160px;
-    }
-    .food .list img:hover{
-      width:170px;
-      border-radius: 20px;
-  }
-    .food .list p{
-      font-size: 11px;
-    }
-    .food .list h3{
-      font-size: 13px;
-    }   
-} */
 .dropdownmenu{ 
     display:none;
 }
