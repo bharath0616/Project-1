@@ -1,14 +1,13 @@
 *{
     box-sizing: border-box;
+    
 }
 body {
     margin-top: 0; 
     margin: 0px;
     padding:0px;   
     font-family: 'Nunito Sans', sans-serif;
-    overflow-x:hidden;
-    
-    
+     
 }
 
 
@@ -435,11 +434,11 @@ padding: 0px;
   z-index: 1004;
   overflow-y: auto;
   overflow-x: none;
-  position:absolute;
+  position:fixed;
  border-bottom-left-radius: 50px;
- transition: transform 0.3s ease-in-out; /* Add a transition for smooth sliding */
- transform: translateX(100%);
-right: -100%;
+ transition: right 0.3s ease-in-out; /* Add a transition for smooth sliding */
+top:0;
+ right:-45%;
 }
 @media(max-width:870px){
   .cartpage{
