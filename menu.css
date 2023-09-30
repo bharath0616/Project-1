@@ -433,11 +433,10 @@ padding: 0px;
   width: 45%;
   z-index: 1004;
   overflow-y: auto;
-  overflow-x: none;
- 
+  overflow-x: hidden  ;
   position:fixed;
  border-bottom-left-radius: 50px;
- transition: right 0.3s ease-in-out; /* Add a transition for smooth sliding */
+ transition: right 0.3s ease-in-out; 
 top:0;
  right:-100%;
 }
