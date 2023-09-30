@@ -81,8 +81,9 @@ $(document).ready(function() {
   $(document).ready(function() {
     $(".cpbtn").hide();
     $(".cart-total").hide();
+    var totalCost=0;
     $(".cartbtn").click(function() {
-      // Get the product details from the clicked item
+      
       var $parentDiv = $(this).closest(".list");
       var productName = $parentDiv.find("h3").text();
       var productPrice = parseFloat($parentDiv.find("span").text()); // Parse the price as a float
@@ -91,8 +92,7 @@ $(document).ready(function() {
       // Create a new cart item div and set its properties
       var $cartItem = $("<div>").addClass("cartitem");
       var $cpbtn = $(".cpbtn");
-      var $carttotal=$(".cart-total")
-      
+      var $carttotal = $(".cart-total");
   
       // Create an img element with the product image
       var $productImage = $("<img>").attr("src", productImageSrc);
@@ -101,7 +101,7 @@ $(document).ready(function() {
       var $plusButton = $("<button>").addClass("plus").text("+");
       var $quantitySpan = $("<span>").text("1");
       var $minusButton = $("<button>").addClass("minus").text("-");
-
+  
       $cartItems2.append($plusButton);
       $cartItems2.append($quantitySpan);
       $cartItems2.append($minusButton);
@@ -117,16 +117,18 @@ $(document).ready(function() {
       $(".cartpage").append($cartItem);
       $(".cartpage").append($carttotal);
       $(".cartpage").append($cpbtn);
+      
       $cpbtn.show();
       $carttotal.show();
-      $carttotalspan=$(".cart-total span")
-  
+      
+      
+  updateTotalCost();
       // Add event handlers for the plus and minus buttons within the cart item
       $plusButton.click(function() {
         var quantity = parseInt($quantitySpan.text());
-        
         quantity += 1;
         $quantitySpan.text(quantity);
+        updateitemcost()
         updateTotalCost();
       });
   
@@ -135,27 +137,41 @@ $(document).ready(function() {
         if (quantity > 0) {
           quantity -= 1;
           $quantitySpan.text(quantity);
-          updateTotalCost();
+          updateitemcost()
+        updateTotalCost();
         }
   
         // Check if quantity is zero and remove the cart item
         if (quantity === 0) {
           $cartItem.remove();
+          
+        updateTotalCost();
         }
+        
       });
+  function updateitemcost(){
+    var quantity = parseInt($quantitySpan.text());
+        var itemcost = productPrice * quantity;
+        $cartItems3.find("span").text(itemcost.toFixed(2));
+      }
   
       function updateTotalCost() {
-        var carttotalcost = parseInt($carttotalspan.text());
-        var quantity = parseInt($quantitySpan.text());
-        var totalCost = productPrice * quantity;
-        $cartItems3.find("span").text(totalCost);
-      }
-    });
-  });
+       totalCost=0;
+        $(".cartitem").each(function() {
+          var itemPrice = parseFloat($(this).find(".cartitems3 span").text());
+          totalCost +=  itemPrice;
+        });
   
-    
+        // Update the total cost and display it
+        $carttotal.find("span").text(totalCost.toFixed(2)); // Display the total cost with two decimal places
+      }
+      
+    }); 
+  
     $(".clear-cart").click(function(){
      $(".cartitem").remove();
+     $(".cart-total span").text("0")
     });
+  }); 
 
 

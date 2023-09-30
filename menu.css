@@ -392,6 +392,16 @@ padding: 0px;
   position: absolute;
   z-index: 1000;
 }
+.list p {
+  font-size: 20px;
+  padding: 2px;
+}
+.list p span{
+  font-size: 20px;
+  color: black;
+  padding: 2px;
+}
+
 @media(max-width:900px){
   .list h4{
     font-size: 20px;
