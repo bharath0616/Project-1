@@ -80,6 +80,7 @@ $(document).ready(function() {
  
   $(document).ready(function() {
     $(".cpbtn").hide();
+    $(".cart-total").hide();
     $(".cartbtn").click(function() {
       // Get the product details from the clicked item
       var $parentDiv = $(this).closest(".list");
@@ -90,6 +91,8 @@ $(document).ready(function() {
       // Create a new cart item div and set its properties
       var $cartItem = $("<div>").addClass("cartitem");
       var $cpbtn = $(".cpbtn");
+      var $carttotal=$(".cart-total")
+      
   
       // Create an img element with the product image
       var $productImage = $("<img>").attr("src", productImageSrc);
@@ -112,12 +115,16 @@ $(document).ready(function() {
   
       $cartItem.append($cartItems, $cartItems2, $cartItems3);
       $(".cartpage").append($cartItem);
+      $(".cartpage").append($carttotal);
       $(".cartpage").append($cpbtn);
       $cpbtn.show();
+      $carttotal.show();
+      $carttotalspan=$(".cart-total span")
   
       // Add event handlers for the plus and minus buttons within the cart item
       $plusButton.click(function() {
         var quantity = parseInt($quantitySpan.text());
+        
         quantity += 1;
         $quantitySpan.text(quantity);
         updateTotalCost();
@@ -138,6 +145,7 @@ $(document).ready(function() {
       });
   
       function updateTotalCost() {
+        var carttotalcost = parseInt($carttotalspan.text());
         var quantity = parseInt($quantitySpan.text());
         var totalCost = productPrice * quantity;
         $cartItems3.find("span").text(totalCost);
