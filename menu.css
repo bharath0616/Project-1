@@ -393,18 +393,27 @@ padding: 0px;
   z-index: 1000;
 }
 .list p {
-  font-size: 20px;
+  font-size: 15px;
   padding: 2px;
 }
 .list p span{
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   padding: 2px;
 }
 
 @media(max-width:900px){
   .list h4{
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .list p {
+    font-size: 16px;
+    padding: 2px;
+  }
+  .list p span{
+    font-size: 16px;
+    color: black;
+    padding: 2px;
   }
   
 
@@ -422,6 +431,15 @@ padding: 0px;
 @media(max-width:410px){
   .list h4{
     font-size: 12px;
+  }
+  .list p {
+    font-size: 11px;
+    padding: 2px;
+  }
+  .list p span{
+    font-size: 11px;
+    color: black;
+    padding: 2px;
   }
 }
 .varieties .up{

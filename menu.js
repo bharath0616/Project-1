@@ -82,8 +82,9 @@ $(document).ready(function() {
     $(".cpbtn").hide();
     $(".cart-total").hide();
     var totalCost=0;
+    var i=0;
     $(".cartbtn").click(function() {
-      
+      var quant=$(".quantity")
       var $parentDiv = $(this).closest(".list");
       var productName = $parentDiv.find("h3").text();
       var productPrice = parseFloat($parentDiv.find("span").text()); // Parse the price as a float
@@ -123,8 +124,12 @@ $(document).ready(function() {
       
       
   updateTotalCost();
+  i+=1;
+  $(".quantity").text(i);
       // Add event handlers for the plus and minus buttons within the cart item
       $plusButton.click(function() {
+        i+=1;
+        quant.text(i)
         var quantity = parseInt($quantitySpan.text());
         quantity += 1;
         $quantitySpan.text(quantity);
@@ -133,6 +138,8 @@ $(document).ready(function() {
       });
   
       $minusButton.click(function() {
+        i-=1;
+        quant.text(i)
         var quantity = parseInt($quantitySpan.text());
         if (quantity > 0) {
           quantity -= 1;
@@ -171,6 +178,8 @@ $(document).ready(function() {
     $(".clear-cart").click(function(){
      $(".cartitem").remove();
      $(".cart-total span").text("0")
+     i=0;
+     $(".quantity").text("0");
     });
   }); 
 
