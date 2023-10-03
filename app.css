@@ -111,16 +111,20 @@ body {
 .dropdownmenu{ 
     display:none;
 }
-
+.corousel{
+  background: #4d4d4f;
+}
 .corousel .c1 ,.c2,.c3{
     height: 700px;
 }
 
 #aboutus{
+  background:#d8cdcd;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-top: 0px;
 }
 .abt1{
   width: 50%;
@@ -713,6 +717,7 @@ body {
   }
   }
   @media (max-width:423px){
+    
     .abt1 iframe{
         width: 280px;
         height: 50vh;
