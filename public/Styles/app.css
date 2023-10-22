@@ -18,11 +18,18 @@ body {
     width: 100%;
     font-weight: 700;
     height:80px;
-    
     display: flex;
     justify-content:space-between;
     align-items: center;     
 }
+.nv  img {
+  margin-left: 20px;
+     width: 100px;
+     height: 70px;
+     font-weight: 10000;
+     
+}
+
 
 
 .aclass ul{
@@ -56,10 +63,6 @@ body {
     color: beige;
 
     
-}
-
-.nv .logo {
-    background-image: url('../assets/logo.png');       
 }
 
 
@@ -710,6 +713,10 @@ body {
   .abt_btn{
     margin-left: 220px;
   }
+  .nv img{
+    height: 60px;
+    width: 80px;
+  }
   }
   @media (max-width:423px){
     
@@ -719,6 +726,10 @@ body {
     }
     .abt_btn{
         margin-left: 140px;
+    }
+    .nv img{
+      height: 50px;
+      width: 65px;
     }
 
 }
@@ -731,6 +742,10 @@ body {
       margin-left: 100px;
   }
 
+  .nv img{
+    height: 50px;
+    width: 55px;
+  }
 }
 @media (max-width:331px){
   .abt1 iframe{

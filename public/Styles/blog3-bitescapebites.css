@@ -25,7 +25,46 @@
     align-items: center;     
   }
   
+  .nv  img {
+    margin-left: 20px;
+       width: 100px;
+       height: 70px;
+       font-weight: 10000;
+       
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  .abt1 iframe{
+    width:310px;
+    height: 67vh;
+  }
+  .abt_btn{
+    margin-left: 220px;
+  }
+  .nv img{
+    height: 60px;
+    width: 80px;
+  }
+  }
+  @media (max-width:423px){
+    
   
+    .nv img{
+      height: 50px;
+      width: 65px;
+    }
+  
+  }
+  @media (max-width:391px){
+ 
+  
+  .nv img{
+    height: 50px;
+    width: 55px;
+  }
+  }
  
   .nv a {
     background-image:url('media/back.png');
