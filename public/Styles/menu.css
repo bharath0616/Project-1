@@ -12,13 +12,14 @@ body {
 
 
 .nv {
+  background-color: #24262b;
     z-index: 1;
     position: sticky;
     top: 0%;
     width: 100%;
     font-weight: 700;
     height:80px;
-    background: white;
+    margin-bottom: 10px;
     display: flex;
     justify-content:space-between;
     align-items: center;     
@@ -38,7 +39,7 @@ body {
 
 .nv a{
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 1rem;
     display: block;
     font-size: 1rem;
@@ -53,7 +54,7 @@ body {
 }
 .nv .a:hover{
     font-size: 1.06rem;
-    color: green;
+    color: beige;
 
     
 }
@@ -79,7 +80,7 @@ body {
     font-size: 1rem;
     text-align: center;
     border: 1.5px solid gray;
-    background-color:white;
+    background-color: #24262b;
     border-radius: 20px;
     padding:10px;
     margin-top: 4px;
@@ -90,7 +91,7 @@ body {
     font-size: 1rem;
     text-align: center;
     border: 1.5px solid gray;
-    background-color: bisque;
+    background-color: #24262b;
     border-radius: 20px;
     padding:10px;
     margin-top: 4px;
@@ -99,8 +100,8 @@ body {
     transition: 0.5s ease-in-out;
 }
 .signin:hover,.order:hover{
-    background-color: black;
-    color: white;
+    background-color: beige;
+    color: black;
 }
 
 .cart{
@@ -111,6 +112,7 @@ body {
   cursor: pointer;
 }
 .cart img{
+  
   width: 40px;
   height: 40px;
   z-index: 1002;
@@ -189,7 +191,7 @@ border-radius: 20px;
     
 }
 #items .varieties{
-   background-color:rgb(27, 17, 17);
+  background-color: #24262b;
   opacity: 0.9;
   margin-top: 20px;
   position: sticky;
