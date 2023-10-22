@@ -11,13 +11,14 @@ body {
 }
 
 .nv {
+  background-color: #24262b;
     z-index: 1;
     position: sticky;
     top: 0%;
     width: 100%;
     font-weight: 700;
     height:80px;
-    background: white;
+    
     display: flex;
     justify-content:space-between;
     align-items: center;     
@@ -37,7 +38,7 @@ body {
 
 .nv a{
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 1rem;
     display: block;
     font-size: 1rem;
@@ -52,19 +53,13 @@ body {
 }
 .nv .a:hover{
     font-size: 1.06rem;
-    color: green;
+    color: beige;
 
     
 }
 
 .nv .logo {
-    background-image: url('media/logo.png');
-    font-family: 1200;
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-   margin: 0.5rem;
-       
+    background-image: url('../assets/logo.png');       
 }
 
 
@@ -83,7 +78,7 @@ body {
     font-size: 1rem;
     text-align: center;
     border: 1.5px solid gray;
-    background-color:white;
+    background-color: #24262b;
     border-radius: 20px;
     padding:10px;
     margin-top: 4px;
@@ -94,17 +89,17 @@ body {
     font-size: 1rem;
     text-align: center;
     border: 1.5px solid gray;
-    background-color: bisque;
+    background-color: #24262b;
     border-radius: 20px;
     padding:10px;
     margin-top: 4px;
     margin-right: 20px;
     font-size: 1rem;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .signin:hover,.order:hover{
-    background-color: black;
-    color: white;
+    background-color:beige;
+    color: black;
 }
 
 
@@ -119,7 +114,7 @@ body {
 }
 
 #aboutus{
-  background:#d8cdcd;
+ 
     display: flex;
     justify-content: center;
     align-items: center;
