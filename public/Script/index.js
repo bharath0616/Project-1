@@ -30,13 +30,6 @@ $(document).ready(function(){
     }) 
 });
 
-/* $(document).ready(function(){
-    $(window).scroll(function(){
-        $(".nv").addClass("sticky")
-    })
-    
-}); */
-
 $(document).ready(function () {
     $(".contactus").click(function(){
         $(".screen").fadeIn(1000);
