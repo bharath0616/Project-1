@@ -10,57 +10,31 @@ body {
 }
 
 .nv {
-  z-index: 1;
-  position: sticky;
-  top: 0%;
-  width: 100%;
-  font-weight: 700;
-  height:80px;
-  background: white;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;     
-}
-
-.nv  img {
-  margin-left: 20px;
-     width: 100px;
-     height: 70px;
-     font-weight: 10000;
-     
-}
-@media(max-width: 574px){
-  .footer-col{
+  background-color: #24262b;
+    z-index: 1;
+    position: sticky;
+    top: 0%;
     width: 100%;
+    font-weight: 700;
+    height:80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;     
 }
-.abt1 iframe{
-  width:310px;
-  height: 67vh;
+.nv h1{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ margin-left: 60px;
+ font-size: 30px;
+ letter-spacing: 0px;
+ font-weight: 550;
+ color: rgb(202, 143, 34);
+ cursor: pointer;
 }
-.abt_btn{
-  margin-left: 220px;
-}
-.nv img{
-  height: 60px;
-  width: 80px;
-}
-}
-@media (max-width:423px){
-  
 
-  .nv img{
-    height: 50px;
-    width: 65px;
-  }
-
-}
-@media (max-width:391px){
-
-
-.nv img{
-  height: 50px;
-  width: 55px;
-}
+.nv h1 .s2{
+  color: rgb(14, 163, 14);
+  margin-left: 0px;
+ 
 }
 .aclass ul{
   margin:0px;
@@ -75,7 +49,7 @@ body {
 
 .nv a{
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 1rem;
   display: block;
   font-size: 1rem;
@@ -84,30 +58,13 @@ body {
 
   font-size: 1rem;
   text-decoration: none;
-  
-  
-
 }
 .nv .a:hover{
   font-size: 1.06rem;
-  color: green;
+  color: beige;
 
   
 }
-
-.nv .logo {
-  background-image: url('media/logo.png');
-  font-family: 1200;
-  background-size: contain;
-  background-repeat: no-repeat;
-  
- margin: 0.5rem;
-     
-}
-
-
-
-
 .navempty{
   display: none;
   cursor:default;
@@ -121,28 +78,17 @@ body {
   font-size: 1rem;
   text-align: center;
   border: 1.5px solid gray;
-  background-color:white;
+  background-color: #24262b;
   border-radius: 20px;
   padding:10px;
   margin-top: 4px;
   margin-right: 25px;
   transition: 0.5s ease-in-out;
 }
-.nv .order{
-  font-size: 1rem;
-  text-align: center;
-  border: 1.5px solid gray;
-  background-color: bisque;
-  border-radius: 20px;
-  padding:10px;
-  margin-top: 4px;
-  margin-right: 20px;
-  font-size: 1rem;
-  transition: 0.5s ease-in-out;
-}
-.signin:hover,.order:hover{
-  background-color: black;
-  color: white;
+
+.signin:hover{
+  background-color:beige;
+  color: black;
 }
 
 

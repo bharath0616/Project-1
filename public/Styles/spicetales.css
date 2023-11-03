@@ -25,58 +25,14 @@
     align-items: center;     
   }
   
-  
-  .nv  img {
-    margin-left: 20px;
-       width: 100px;
-       height: 70px;
-       font-weight: 10000;
-       
-  }
-  @media(max-width: 574px){
-    .footer-col{
-      width: 100%;
-  }
-  .abt1 iframe{
-    width:310px;
-    height: 67vh;
-  }
-  .abt_btn{
-    margin-left: 220px;
-  }
-  .nv img{
-    height: 60px;
-    width: 80px;
-  }
-  }
-  @media (max-width:423px){
-    
-  
-    .nv img{
-      height: 50px;
-      width: 65px;
-    }
-  
-  }
-  @media (max-width:391px){
- 
-  
-  .nv img{
-    height: 50px;
-    width: 55px;
-  }
+  .nv h3{
+    margin-left: 30px;
+    font-weight: 1000;
+
   }
   .nv a {
-    background-image:url('media/back.png');
-    font-size: 10px;
-    color: black;
-    padding: 12px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 2s0px;
-    
-  
-       
+    text-decoration: none;
+    color: black;   
   }
   
   .conclusion{

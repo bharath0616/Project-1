@@ -65,7 +65,10 @@ $(document).ready(function(){
     })
     
 });
-
+document.getElementById("navigate").addEventListener("click", function() {
+    window.location.href = "index.html";
+  });
+  
 
 
 
