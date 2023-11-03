@@ -43,7 +43,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function() {
-    // Show the button when the user scrolls down 200 pixels
+
     $(window).scroll(function() {
       if ($(this).scrollTop() >= 200) {
         $('.up').fadeIn();
@@ -78,7 +78,7 @@ $(document).ready(function() {
     $(".cart-total").hide();
     var totalCost = 0;
     var i = 0;
-    var cartItems = {}; // Use an object to keep track of cart items.
+    var cartItems = {}; 
 
     $(".cartbtn").click(function() {
         var quant = $(".quantity");
@@ -86,8 +86,6 @@ $(document).ready(function() {
         var productName = $parentDiv.find("h3").text();
         var productPrice = parseFloat($parentDiv.find("span").text());
         var productImageSrc = $parentDiv.find("img").attr("src");
-
-        // Check if the product is already in the cart.
         if (cartItems[productName]) {
             cartItems[productName].quantity += 1;
             cartItems[productName].itemCost = productPrice * cartItems[productName].quantity;
@@ -154,7 +152,6 @@ $(document).ready(function() {
                 updateCartItemCount();
             });
 
-            // Add the item to the cartItems object.
             cartItems[productName] = {
                 quantity: 1,
                 itemCost: productPrice
@@ -184,7 +181,7 @@ $(document).ready(function() {
         $(".cart-total span").text("0");
         i = 0;
         $(".quantity").text("0");
-        cartItems = {}; // Reset the cartItems object.
+        cartItems = {}; 
     });
 });
 
