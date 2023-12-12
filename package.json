@@ -2,12 +2,12 @@
   "name": "project-1",
   "version": "1.0.0",
   "description": "This repository houses the complete source code which includes html, css, bootstrap, js, jQuery and assets for the BiteScape Restaurant website.",
-  "main": "app.js",
+  "main": "index.js",
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
